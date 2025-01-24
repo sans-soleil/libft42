@@ -1,2 +1,12 @@
 # libft42
-to add later
+Our very first project!
+
+We will learn to play with:
+
+Strings
+
+Characters
+
+Memory
+
+
