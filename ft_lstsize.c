@@ -1,12 +1,12 @@
 /* ************************************************************************** */
 /*                                                                            */
-/*                                                        :::      ::::::::   */
-/*   ft_lstsize.c                                       :+:      :+:    :+:   */
-/*                                                    +:+ +:+         +:+     */
-/*   By: pavidal <pavidal@student.42.fr>            +#+  +:+       +#+        */
-/*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/01/22 20:34:53 by pavidal           #+#    #+#             */
-/*   Updated: 2025/01/22 21:09:12 by pavidal          ###   ########.fr       */
+/*                                                        ::::::::            */
+/*   ft_lstsize.c                                       :+:    :+:            */
+/*                                                     +:+                    */
+/*   By: pavidal <pavidal@student.42.fr>              +#+                     */
+/*                                                   +#+                      */
+/*   Created: 2025/01/22 20:34:53 by pavidal       #+#    #+#                 */
+/*   Updated: 2025/01/24 12:11:12 by pavidal       ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,15 +14,15 @@
 
 int	ft_lstsize(t_list *lst)
 {
-	int count;
+	int	count;
 
 	count = 0;
-	while(lst != NULL)
+	while (lst != NULL)
 	{
 		lst = lst->next;
 		count++;
 	}
-	return(count);
+	return (count);
 }
 
 // int main (void)
@@ -46,3 +46,13 @@ int	ft_lstsize(t_list *lst)
 // 	printf("%d\n", count);
 // 	return (0);
 // }
+//while (lst != NULL)
+//This loop continues until the pointer lst becomes NULL,
+//meaning it will iterate through all the nodes in the linked list,
+//including the last one.
+//Use case: This is the most common and general way to iterate
+//through a linked list if you need to process every node,
+// while ((*lst) != NULL) checks if the current node is NULL, which doesn't help you traverse the list correctly.
+// while ((*lst)->next != NULL) checks if the current node's next pointer is NULL, which is the correct condition for traversing the list until you reach the last node.
+// The pointer lst should be updated to lst = &(*lst)->next; to move to the next node, while ensuring you're checking the next pointer of the current node ((*lst)->next) to correctly traverse the list.
+// //including the last one.

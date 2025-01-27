@@ -1,12 +1,12 @@
 /* ************************************************************************** */
 /*                                                                            */
-/*                                                        :::      ::::::::   */
-/*   libft.h                                            :+:      :+:    :+:   */
-/*                                                    +:+ +:+         +:+     */
-/*   By: pavidal <pavidal@student.42.fr>            +#+  +:+       +#+        */
-/*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/10/09 17:16:59 by pavidal           #+#    #+#             */
-/*   Updated: 2025/01/22 21:09:57 by pavidal          ###   ########.fr       */
+/*                                                        ::::::::            */
+/*   libft.h                                            :+:    :+:            */
+/*                                                     +:+                    */
+/*   By: pavidal <pavidal@student.42.fr>              +#+                     */
+/*                                                   +#+                      */
+/*   Created: 2024/10/09 17:16:59 by pavidal       #+#    #+#                 */
+/*   Updated: 2025/01/24 11:40:52 by pavidal       ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -69,6 +69,7 @@ t_list	*ft_lstnew(void *content);
 void	ft_lstadd_front(t_list **lst, t_list *new);
 int		ft_lstsize(t_list *lst);
 t_list	*ft_lstlast(t_list *lst);
+void ft_lstadd_back(t_list **lst, t_list *new);
 
 #endif
 

@@ -1,12 +1,12 @@
 /* ************************************************************************** */
 /*                                                                            */
-/*                                                        :::      ::::::::   */
-/*   ft_lstadd_front.c                                  :+:      :+:    :+:   */
-/*                                                    +:+ +:+         +:+     */
-/*   By: pavidal <pavidal@student.42.fr>            +#+  +:+       +#+        */
-/*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/01/22 18:53:44 by pavidal           #+#    #+#             */
-/*   Updated: 2025/01/22 20:32:57 by pavidal          ###   ########.fr       */
+/*                                                        ::::::::            */
+/*   ft_lstadd_front.c                                  :+:    :+:            */
+/*                                                     +:+                    */
+/*   By: pavidal <pavidal@student.42.fr>              +#+                     */
+/*                                                   +#+                      */
+/*   Created: 2025/01/22 18:53:44 by pavidal       #+#    #+#                 */
+/*   Updated: 2025/01/24 10:42:59 by pavidal       ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -37,7 +37,7 @@ void	ft_lstadd_front(t_list	**lst, t_list	*new)
 // 	free(new);
 // 	return (0);
 // }
-// st: The address of a pointer to the first link of
+// lst: The address of a pointer to the first link of
 // a list AKA HEAD.
 //WHY IS A A DOUBLE POINTER?
 //so the function can directly modify the caller's head pointer.
