@@ -6,17 +6,19 @@
 /*   By: pavidal <pavidal@student.42.fr>              +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2025/01/27 16:48:34 by pavidal       #+#    #+#                 */
-/*   Updated: 2025/01/27 17:54:48 by pavidal       ########   odam.nl         */
+/*   Updated: 2025/02/02 18:47:51 by pavidal       ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void ft_lstclear(t_list **lst, void (*del)(void*))
+void	ft_lstclear(t_list **lst, void (*del)(void*))
 {
-	t_list *tmp;
-	while((*lst) != NULL)
-	{	del((*lst)->content);
+	t_list	*tmp;
+
+	while ((*lst) != NULL)
+	{
+		del ((*lst)->content);
 		tmp = ((*lst)->next);
 		free(*lst);
 		*lst = tmp;

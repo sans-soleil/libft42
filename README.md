@@ -4,6 +4,16 @@ We shape our lego pieces.
 
 We will learn to play with:
 
+Characters
+
+    ft_isalpha
+    ft_isdigit
+    ft_isalnum
+    ft_isascii
+    ft_isprint
+    ft_toupper
+    ft_tolower
+
 Strings
 
     ft_strlen
@@ -20,23 +30,6 @@ Strings
     ft_strmapi
     ft_striteri
 
-
-Characters
-
-    ft_isalpha
-    ft_isdigit
-    ft_isalnum
-    ft_isascii
-    ft_isprint
-    ft_toupper
-    ft_tolower
-
-
-Numbers (who dream to become characters and viceversa)
-
-    ft_atoi
-    ft_itoa
-
 Memory
 
     ft_calloc
@@ -47,6 +40,12 @@ Memory
     ft_memchr
     ft_memcmp
     ft_strdup
+
+Numbers (who dream to become characters and viceversa)
+
+    ft_atoi
+    ft_itoa
+
 
 File Descriptors
 

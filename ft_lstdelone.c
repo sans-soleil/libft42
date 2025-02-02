@@ -6,15 +6,15 @@
 /*   By: pavidal <pavidal@student.42.fr>              +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2025/01/27 14:37:31 by pavidal       #+#    #+#                 */
-/*   Updated: 2025/01/27 16:47:13 by pavidal       ########   odam.nl         */
+/*   Updated: 2025/02/02 18:48:27 by pavidal       ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void ft_lstdelone(t_list *lst, void (*del)(void*))
+void	ft_lstdelone(t_list *lst, void (*del)(void*))
 {
-	if(!del|| !lst)
+	if (!del || !lst)
 		return ;
 	del(lst->content);
 	free(lst);

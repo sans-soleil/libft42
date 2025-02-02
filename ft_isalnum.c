@@ -3,10 +3,10 @@
 /*                                                        ::::::::            */
 /*   ft_isalnum.c                                       :+:    :+:            */
 /*                                                     +:+                    */
-/*   By: pavidal <pavidal@student.codam.nl>           +#+                     */
+/*   By: pavidal <pavidal@student.42.fr>              +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2024/10/08 13:20:05 by pavidal       #+#    #+#                 */
-/*   Updated: 2024/10/29 14:31:48 by pavidal       ########   odam.nl         */
+/*   Updated: 2025/02/02 15:02:43 by pavidal       ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 

@@ -6,14 +6,13 @@
 /*   By: pavidal <pavidal@student.42.fr>              +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2024/10/09 17:16:59 by pavidal       #+#    #+#                 */
-/*   Updated: 2025/01/27 18:42:00 by pavidal       ########   odam.nl         */
+/*   Updated: 2025/02/02 18:46:10 by pavidal       ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef LIBFT_H
 # define LIBFT_H
 
-# include <stdio.h>
 # include <ctype.h>
 # include <stdlib.h>
 # include <string.h>
@@ -74,20 +73,10 @@ void	ft_lstdelone(t_list *lst, void (*del)(void*));
 void	ft_lstclear(t_list **lst, void (*del)(void*));
 void	ft_lstiter(t_list *lst, void (*f)(void *));
 
-
 #endif
 
-// header file (.h) and source file (.c) = object file (.o)
-// behaves like a module
-// header file provides the interface to a module. THe src file
-//remains as a black box
-//1. header/include guards. tells the preprocessor
-//to insert contents
-//of specific file into current file
-//hashtag beginnings say:
-// and treat them like macros, you inject them, lit copying the contents.
-// go around duplication of include. if not deifned, checks to see
-//if the macro symbol has been defined
-// if already declared, will be ignored. if not, defined.
-//end the conditional
-// macro deifnitoins and type files
+/*
+1. header include guards. tells the preprocessor
+to insert contents
+of specific file into current file
+*/

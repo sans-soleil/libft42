@@ -3,10 +3,10 @@
 /*                                                        ::::::::            */
 /*   ft_isalpha.c                                       :+:    :+:            */
 /*                                                     +:+                    */
-/*   By: pavidal <pavidal@student.codam.nl>           +#+                     */
+/*   By: pavidal <pavidal@student.42.fr>              +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2024/10/07 18:17:11 by pavidal       #+#    #+#                 */
-/*   Updated: 2024/10/11 21:25:26 by pavidal       ########   odam.nl         */
+/*   Updated: 2025/02/02 15:01:58 by pavidal       ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,10 +14,7 @@
 
 int	ft_isalpha(int c)
 {
-	if (!((c >= 'a' && c <= 'z')
-			|| (c >= 'A' && c <= 'Z')))
-	{
-		return (0);
-	}
-	return (1024);
+	if ((c >= 'a' && c <= 'z') || (c >= 'A' && c <= 'Z'))
+		return (1);
+	return (0);
 }

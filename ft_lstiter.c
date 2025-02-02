@@ -6,13 +6,13 @@
 /*   By: pavidal <pavidal@student.42.fr>              +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2025/01/27 18:07:25 by pavidal       #+#    #+#                 */
-/*   Updated: 2025/01/27 18:41:11 by pavidal       ########   odam.nl         */
+/*   Updated: 2025/02/02 18:46:38 by pavidal       ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void ft_lstiter(t_list *lst, void (*f)(void *))
+void	ft_lstiter(t_list *lst, void (*f)(void *))
 {
 	while (lst != NULL)
 	{
