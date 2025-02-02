@@ -1,6 +1,6 @@
 # libft42
 Our very first own library!
-It is not only about building cool stuff, we shape our own lego pieces.
+We shape our lego pieces.
 
 We will learn to play with:
 
@@ -32,7 +32,7 @@ Characters
     ft_tolower
 
 
-Numbers (that dream to become characters and viceversa)
+Numbers (who dream to become characters and viceversa)
 
     ft_atoi
     ft_itoa
