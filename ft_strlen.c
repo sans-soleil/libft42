@@ -3,23 +3,25 @@
 /*                                                        ::::::::            */
 /*   ft_strlen.c                                        :+:    :+:            */
 /*                                                     +:+                    */
-/*   By: pavidal <pavidal@student.codam.nl>           +#+                     */
+/*   By: pavidal <pavidal@student.42.fr>              +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2024/10/08 14:49:35 by pavidal       #+#    #+#                 */
-/*   Updated: 2024/10/17 21:53:21 by pavidal       ########   odam.nl         */
+/*   Updated: 2025/02/03 16:44:54 by pavidal       ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+#include <string.h>
 
-size_t	ft_strlen(const char *s)
+size_t ft_strlen(const char *s)
 {
-	size_t	i;
+	size_t count;
 
-	i = 0;
-	while (s[i] != '\0')
+	count = 0;
+
+	while (s[count] != '\0')
 	{
-		i++;
+		count++;
 	}
-	return (i);
+	return(count);
 }

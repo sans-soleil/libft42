@@ -1,8 +1,8 @@
 # libft42
 Our very first own library!
-We shape our lego pieces.
+We shape our lego pieces for future projects.
 
-We will learn to play with:
+Here, we will learn to play with:
 
 Characters
 
@@ -56,10 +56,9 @@ File Descriptors
 
 BONUS (+25%)
 
-Linked Lists ❤️ DO NOT SKIP THIS BONUS: you will thank yourself in later projects.
+Linked Lists ❤️ DO NOT SKIP THIS BONUS: you will thank yourself in later projects (yes, Push_Swap!)
 
     ft_lstnew
-    ft_lstadd_front
     ft_lstsize
     ft_lstlast
     ft_lstadd_back

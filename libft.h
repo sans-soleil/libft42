@@ -6,7 +6,7 @@
 /*   By: pavidal <pavidal@student.42.fr>              +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2024/10/09 17:16:59 by pavidal       #+#    #+#                 */
-/*   Updated: 2025/02/02 18:46:10 by pavidal       ########   odam.nl         */
+/*   Updated: 2025/03/09 19:47:04 by pavidal       ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -42,6 +42,7 @@ void	*ft_memmove(void *dest, const void *src, size_t n);
 int		ft_memcmp(const void *s1, const void *s2, size_t n);
 char	*ft_strnstr(const char *big, const char *little, size_t len);
 int		ft_atoi(const char *nptr);
+long	ft_atol(const char *str);
 void	*ft_calloc(size_t nmemb, size_t size);
 char	*ft_strdup(const char *s);
 char	*ft_substr(char const *s, unsigned int start, size_t len);

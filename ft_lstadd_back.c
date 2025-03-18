@@ -6,7 +6,7 @@
 /*   By: pavidal <pavidal@student.42.fr>              +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2025/01/24 11:39:06 by pavidal       #+#    #+#                 */
-/*   Updated: 2025/02/02 18:48:58 by pavidal       ########   odam.nl         */
+/*   Updated: 2025/02/06 20:06:14 by pavidal       ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -36,9 +36,10 @@ void	ft_lstadd_back(t_list **lst, t_list *new)
 // 	t_list *new = (t_list *)malloc(sizeof(t_list));
 // 	if (new == NULL)
 // 		return(-1);
+
 // 	int y = 2;
 // 	new->content=&y;
-// 	new->next =NULL;
+// 	new->next =NULL;                                                                                                                                                                      
 
 // 	ft_lstadd_back(&lst, new);
 // 	printf("%d", *(int *)lst->next->content);

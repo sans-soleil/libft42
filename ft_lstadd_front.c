@@ -6,7 +6,7 @@
 /*   By: pavidal <pavidal@student.42.fr>              +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2025/01/22 18:53:44 by pavidal       #+#    #+#                 */
-/*   Updated: 2025/01/24 10:42:59 by pavidal       ########   odam.nl         */
+/*   Updated: 2025/02/26 17:37:35 by pavidal       ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,9 +20,10 @@ void	ft_lstadd_front(t_list	**lst, t_list	*new)
 	*lst = new;
 }
 
-// int main (void)
+int main (void)
+
 // {
-// 	int x = 2;
+// 	int x = 1;
 // 	int *content = &x;
 // 	t_list	*lst = NULL;
 

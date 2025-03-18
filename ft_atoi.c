@@ -3,14 +3,15 @@
 /*                                                        ::::::::            */
 /*   ft_atoi.c                                          :+:    :+:            */
 /*                                                     +:+                    */
-/*   By: pavidal <pavidal@student.codam.nl>           +#+                     */
+/*   By: pavidal <pavidal@student.42.fr>              +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2024/10/18 22:43:47 by pavidal       #+#    #+#                 */
-/*   Updated: 2024/10/29 17:40:56 by pavidal       ########   odam.nl         */
+/*   Updated: 2025/03/09 20:12:32 by pavidal       ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+#include <limits.h> //you can use macros here
 
 int	ft_atoi(const char *str)
 {
@@ -26,9 +27,7 @@ int	ft_atoi(const char *str)
 	if (str[i] == '+' || str[i] == '-')
 	{
 		if (str[i] == '-')
-		{
 			sign = -sign;
-		}
 		i++;
 	}
 	result = 0;
@@ -59,3 +58,12 @@ int	ft_atoi(const char *str)
 //     printf("Real deal: %d\n", atoi("-21474836488675760237423876589423747"));
 //     return 0;
 // }
+//
+// Return type: a 32-bit signed integer
+//Standard atoi handle cases where the result exceeds the range of an int (+ or -).
+//For instance, when the number exceeds INT_MAX or INT_MIN, the function
+//should return INT_MAX or INT_MIN respectively, just like atoi does in C.
+
+//Casting the Result to int: When you return result, which is a long, 
+//the result is cast back to int. If the long value exceeds the bounds of the int range (INT_MIN to INT_MAX), 
+//casting it to an int will cause truncation or undefined behavior (depending on the platform).

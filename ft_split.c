@@ -3,14 +3,15 @@
 /*                                                        ::::::::            */
 /*   ft_split.c                                         :+:    :+:            */
 /*                                                     +:+                    */
-/*   By: pavidal <pavidal@student.codam.nl>           +#+                     */
+/*   By: pavidal <pavidal@student.42.fr>              +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2024/10/23 22:48:26 by pavidal       #+#    #+#                 */
-/*   Updated: 2024/10/24 21:45:58 by pavidal       ########   odam.nl         */
+/*   Updated: 2025/03/13 00:04:11 by pavidal       ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+#include <stdlib.h>
 
 static size_t	count_words(const char *s, char c);
 static size_t	wordlen(const char *s, char c, size_t start);
@@ -93,3 +94,7 @@ static void	free_words(char **str, size_t word)
 		free(str[--word]);
 	free(str);
 }
+
+//returns an array ob substrings in dynamically allocated memory
+//1. we use strchr to find if there is a separator OR no. If so we increment the word count.
+//2. allocate space for an amount of pointers to strings depending the words.
